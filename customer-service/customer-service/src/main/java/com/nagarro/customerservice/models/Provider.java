@@ -1,4 +1,4 @@
-package com.nagarro.searchservice.modals;
+package com.nagarro.customerservice.models;
 
 public class Provider {
 	private String name, mobile, serviceType, pLocation;
@@ -16,7 +16,6 @@ public class Provider {
 	
 	
 	public Provider() {
-		
 	}
 
 

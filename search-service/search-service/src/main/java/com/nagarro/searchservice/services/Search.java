@@ -9,7 +9,7 @@ import com.nagarro.searchservice.modals.Provider;
 public class Search {
 	private List<Provider> databaseList;
 	private List<Provider> serviceProviders;
-
+	
 	public Search() {
 		this.databaseList = new ArrayList<>();
 		this.databaseList.add(new Provider("Raju","Delhi","9453435785","Electrician",500,true));
@@ -73,6 +73,7 @@ public class Search {
 		this.databaseList.add(new Provider("Dinesh","Kolkata","9453435785","Plumber",400,true));
 	}
 	
+	//Method to get the service providers as per customer request
 	public List<Provider> getAvailableProviders(Customer customer){
 		serviceProviders = new ArrayList<>();
 		for(int i=0;i<databaseList.size();i++) {
@@ -83,7 +84,4 @@ public class Search {
 		}
 		return serviceProviders;
 	}
-	
-	
-	
 }

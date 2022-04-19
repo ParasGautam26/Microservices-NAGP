@@ -1,4 +1,4 @@
-package com.nagarro.searchservice.modals;
+package com.nagarro.customerservice.models;
 
 import java.util.List;
 
@@ -9,8 +9,10 @@ public class ServiceProviders {
 		this.serviceProviders = serviceProviders;
 	}
 	
+
 	public ServiceProviders() {
 	}
+
 
 	public List<Provider> getServiceProviders() {
 		return serviceProviders;
@@ -19,5 +21,4 @@ public class ServiceProviders {
 	public void setServiceProviders(List<Provider> serviceProviders) {
 		this.serviceProviders = serviceProviders;
 	}
-
 }

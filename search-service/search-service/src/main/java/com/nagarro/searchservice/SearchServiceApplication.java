@@ -12,20 +12,12 @@ import org.springframework.web.reactive.function.client.WebClient;
 @EnableEurekaClient
 public class SearchServiceApplication {
 
-	
-//	 @Bean 
-//	 public RestTemplate getRestTemplate() { 
-//		 return new RestTemplate(); 
-//	}
-	 
-
 	@Bean
 	@LoadBalanced
 	public WebClient.Builder getWebClientBuilder() {
 		return WebClient.builder();
 	}
 	
-
 	public static void main(String[] args) {
 		SpringApplication.run(SearchServiceApplication.class, args);
 	}
