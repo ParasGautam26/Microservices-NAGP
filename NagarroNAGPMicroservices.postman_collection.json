@@ -1,0 +1,464 @@
+{
+	"info": {
+		"_postman_id": "d4dc9c04-90cc-464b-b26c-37c7fb35bcd6",
+		"name": "NagarroNAGPMicroservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/customer/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/customer/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"customer",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8081/customer/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/customer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"customer",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Apr 2022 13:02:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"customerId\": 1,\n    \"cname\": \"Paras\",\n    \"mobile\": \"9758343644\",\n    \"serviceRequested\": \"plumber\",\n    \"location\": \"Mumbai\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8082/search/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/search/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"search",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8082/search/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/search/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"search",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Apr 2022 13:02:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"serviceProviders\": [\n        {\n            \"name\": \"Mithul\",\n            \"mobile\": \"9453435785\",\n            \"serviceType\": \"Plumber\",\n            \"pLocation\": \"Mumbai\",\n            \"price\": 700,\n            \"status\": true\n        },\n        {\n            \"name\": \"Aksh\",\n            \"mobile\": \"9453435785\",\n            \"serviceType\": \"Plumber\",\n            \"pLocation\": \"Mumbai\",\n            \"price\": 500,\n            \"status\": true\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8083/notification/serviceprovider/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/notification/serviceprovider/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"notification",
+						"serviceprovider",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8083/notification/serviceprovider/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Apr 2022 13:01:23 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"serviceProviders\": [\n        {\n            \"name\": \"Mithul\",\n            \"mobile\": \"9453435785\",\n            \"serviceType\": \"Plumber\",\n            \"pLocation\": \"Mumbai\",\n            \"price\": 700,\n            \"status\": true\n        },\n        {\n            \"name\": \"Aksh\",\n            \"mobile\": \"9453435785\",\n            \"serviceType\": \"Plumber\",\n            \"pLocation\": \"Mumbai\",\n            \"price\": 500,\n            \"status\": true\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/search/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/search/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"search",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/search/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/search/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"search",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Apr 2022 13:03:21 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"serviceProviders\": [\n        {\n            \"name\": \"Mithul\",\n            \"mobile\": \"9453435785\",\n            \"serviceType\": \"Plumber\",\n            \"pLocation\": \"Mumbai\",\n            \"price\": 700,\n            \"status\": true\n        },\n        {\n            \"name\": \"Aksh\",\n            \"mobile\": \"9453435785\",\n            \"serviceType\": \"Plumber\",\n            \"pLocation\": \"Mumbai\",\n            \"price\": 500,\n            \"status\": true\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8081/customer/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/customer/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"customer",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8081/customer/2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/customer/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"customer",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Apr 2022 13:06:08 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"customerId\": 2,\n    \"cname\": \"Sahil\",\n    \"mobile\": \"9558343644\",\n    \"serviceRequested\": \"Electrician\",\n    \"location\": \"Delhi\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8082/search/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/search/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"search",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8082/search/2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/search/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"search",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Apr 2022 13:06:45 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"serviceProviders\": [\n        {\n            \"name\": \"Raju\",\n            \"mobile\": \"9453435785\",\n            \"serviceType\": \"Electrician\",\n            \"pLocation\": \"Delhi\",\n            \"price\": 500,\n            \"status\": true\n        },\n        {\n            \"name\": \"Lalit\",\n            \"mobile\": \"9457635785\",\n            \"serviceType\": \"Electrician\",\n            \"pLocation\": \"Delhi\",\n            \"price\": 400,\n            \"status\": true\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8083/notification/serviceprovider/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/notification/serviceprovider/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"notification",
+						"serviceprovider",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8083/notification/serviceprovider/2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/notification/serviceprovider/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"notification",
+								"serviceprovider",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Apr 2022 13:07:38 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"serviceProviders\": [\n        {\n            \"name\": \"Lalit\",\n            \"mobile\": \"9457635785\",\n            \"serviceType\": \"Electrician\",\n            \"pLocation\": \"Delhi\",\n            \"price\": 400,\n            \"status\": true\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
