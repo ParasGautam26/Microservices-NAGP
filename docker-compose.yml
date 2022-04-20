@@ -1,0 +1,39 @@
+version: '3'
+services:
+  eureka-discovery-server:
+    image: parasgautam26/nagp_microservice:discovery
+    container_name: eureka-discovery-server
+    ports:
+      - "8761:8761"
+
+  customer-service:
+    container_name: customer-service
+    image: parasgautam26/nagp_microservice:customer
+    ports:
+      - "8081:8081"
+    depends_on:
+      - eureka-discovery-server
+      
+  search-service:
+    container_name: search-service
+    image: parasgautam26/nagp_microservice:search
+    ports:
+      - "8082:8082"
+    depends_on:
+      - eureka-discovery-server
+      
+  notification-service:
+    container_name: notification-service
+    image: parasgautam26/nagp_microservice:notification
+    ports:
+      - "8083:8083"
+    depends_on:
+      - eureka-discovery-server
+      
+  api-gateway:
+    container_name: api-gateway
+    image: parasgautam26/nagp_microservice:gateway
+    ports:
+      - "8000:8000"
+    depends_on:
+      - eureka-discovery-server
